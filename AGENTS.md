@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Brand contact details live only in `src/lib/site.ts`; site copy lists (services, portfolio, why points) live in `src/lib/content.ts` — keeps edits in one place.
+- Page sections are reusable components in `src/components/site/`; each route composes them and passes `headingAs="h1" first` when the section opens the page — one h1 per page and header clearance.
+- Contact form validates with the zod schema in `src/lib/contact.ts` and hands off via mailto/WhatsApp (no backend yet).
