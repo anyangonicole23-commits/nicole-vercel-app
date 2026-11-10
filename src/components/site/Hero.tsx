@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="relative isolate overflow-hidden bg-gradient-lavender pb-20 pt-32 sm:pb-28 sm:pt-40 lg:min-h-[100svh] lg:pt-44">
+    <section className="relative isolate overflow-hidden bg-gradient-lavender pb-20 pt-32 sm:pb-28 sm:pt-40 lg:flex lg:min-h-[100svh] lg:items-center lg:pt-36">
       <HeroBackground />
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-[1.15fr_1fr]">
+      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-16 px-6 lg:grid-cols-[1.15fr_1fr]">
         <div>
           <p className="eyebrow inline-flex items-center gap-2 rounded-full glass px-4 py-2 text-primary shadow-soft animate-in fade-in slide-in-from-bottom-2 duration-700">
             <Sparkles className="size-3.5 text-gold-deep" aria-hidden />
@@ -19,7 +19,7 @@ export function Hero() {
             <br />
             My Expertise.
             <br />
-            <em className="text-gradient-gold animate-shimmer not-italic sm:italic">Smarter Workflows.</em>
+            <em className="text-gradient-gold animate-shimmer">Smarter Workflows.</em>
           </h1>
 
           <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg animate-in fade-in slide-in-from-bottom-4 duration-1000 [animation-delay:150ms] [animation-fill-mode:both]">
