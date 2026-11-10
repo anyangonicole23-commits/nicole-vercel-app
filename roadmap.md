@@ -1,7 +1,7 @@
 # Roadmap
 
 ## Now
-- [ ] Swap in real contact details (email, WhatsApp, LinkedIn) — in progress
+- [x] Real contact details in place (email, WhatsApp, LinkedIn)
 - [ ] Instagram link still a placeholder — waiting on Nicole for the real handle
 
 ## Later
