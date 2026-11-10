@@ -1,23 +1,36 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/site/Hero";
+import { AboutSection } from "@/components/site/AboutSection";
+import { ServicesSection } from "@/components/site/ServicesSection";
+import { AutomationSection } from "@/components/site/AutomationSection";
+import { PortfolioSection } from "@/components/site/PortfolioSection";
+import { WhySection } from "@/components/site/WhySection";
+import { CtaBand } from "@/components/site/CtaBand";
 
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Nicole Creative Studio — Executive Support, AI Automation & Design" },
+      { name: "description", content: "Your Vision. My Expertise. Smarter Workflows. Executive virtual assistance, AI-powered support, automation, design, social media and websites." },
+      { property: "og:title", content: "Nicole Creative Studio — Smarter Workflows" },
+      { property: "og:description", content: "Executive support, AI-powered automation and creative digital solutions for entrepreneurs, executives and growing businesses." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Hero />
+      <AboutSection />
+      <ServicesSection />
+      <AutomationSection />
+      <PortfolioSection limit={6} />
+      <WhySection />
+      <CtaBand />
+    </>
   );
 }
