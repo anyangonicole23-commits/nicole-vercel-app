@@ -1,8 +1,7 @@
 # Roadmap
 
 ## Now
-- [x] Real contact details in place (email, WhatsApp, LinkedIn)
-- [ ] Instagram link still a placeholder — waiting on Nicole for the real handle
+- [x] Real contact details in place (email, WhatsApp, LinkedIn, Instagram)
 
 ## Later
 - [ ] Replace sample portfolio projects with Nicole's real work

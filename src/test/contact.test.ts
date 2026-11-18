@@ -40,4 +40,7 @@ describe("Nicole's real contact details", () => {
   it("links the confirmed LinkedIn profile without sharing codes", () => {
     expect(SITE.linkedin).toBe("https://www.linkedin.com/in/nicole-anyango-a427a6358");
   });
+  it("links the supplied Instagram account without sharing codes", () => {
+    expect(SITE.instagram).toBe("https://www.instagram.com/victor_nicky254");
+  });
 });

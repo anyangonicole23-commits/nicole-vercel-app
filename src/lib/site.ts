@@ -7,7 +7,7 @@ export const SITE = {
   // International format, digits only (no +, spaces or dashes).
   whatsapp: "254702022443",
   linkedin: "https://www.linkedin.com/in/nicole-anyango-a427a6358",
-  instagram: "https://www.instagram.com/nicolecreativestudio",
+  instagram: "https://www.instagram.com/victor_nicky254",
 } as const;
 
 export const NAV = [
