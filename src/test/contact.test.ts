@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { buildMailtoUrl, buildWhatsAppUrl, contactSchema } from "@/lib/contact";
+import { SITE } from "@/lib/site";
 
 const valid = {
   name: "Ada",
@@ -25,5 +26,18 @@ describe("contact form rules", () => {
   it("puts the chosen service in the email subject", () => {
     const parsed = contactSchema.parse(valid);
     expect(buildMailtoUrl("a@b.com", parsed)).toContain(encodeURIComponent("Consultation request — Workflow Automation"));
+  });
+});
+
+describe("Nicole's real contact details", () => {
+  it("sends enquiries to the supplied email", () => {
+    expect(SITE.email).toBe("anyangonicole23@gmail.com");
+  });
+  it("opens WhatsApp on the supplied number in international digits-only form", () => {
+    expect(SITE.whatsapp).toBe("254702022443");
+    expect(buildWhatsAppUrl(SITE.whatsapp)).toContain("https://wa.me/254702022443");
+  });
+  it("links the confirmed LinkedIn profile without sharing codes", () => {
+    expect(SITE.linkedin).toBe("https://www.linkedin.com/in/nicole-anyango-a427a6358");
   });
 });
