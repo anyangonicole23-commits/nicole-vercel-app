@@ -15,18 +15,18 @@ export function ServicesSection({ headingAs = "h2", first = false }: { headingAs
           eyebrow="Services"
           title={
             <>
-              Six ways I help your business <em className="text-gradient-royal">run beautifully</em>
+              Executive support that keeps your business <em className="text-gradient-royal">running smoothly</em>
             </>
           }
-          intro="From the inbox to the brand, every service is designed to save you time, sharpen your operations and elevate how your business shows up."
+          intro="Ten core services for CEOs, founders and consultants who need a reliable, organized and proactive right hand."
         />
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {SERVICES.map((service, i) => {
             const Icon = service.icon;
             return (
               <Reveal key={service.slug} delay={(i % 3) * 100} as="article" className="h-full">
-                <div id={service.slug} className="card-premium group flex h-full scroll-mt-28 flex-col overflow-hidden p-7 sm:p-8">
+                <div id={service.slug} className="card-premium group flex h-full scroll-mt-28 flex-col overflow-hidden p-6">
                   <div
                     aria-hidden
                     className="pointer-events-none absolute -right-16 -top-16 size-40 rounded-full bg-lavender opacity-0 blur-2xl transition-opacity duration-700 group-hover:opacity-100"
@@ -37,7 +37,7 @@ export function ServicesSection({ headingAs = "h2", first = false }: { headingAs
                     </span>
                     <span className="font-display text-4xl italic text-gold">{service.number}</span>
                   </div>
-                  <h3 className="relative mt-8 text-[1.75rem] text-foreground">{service.title}</h3>
+                  <h3 className="relative mt-8 text-2xl text-foreground">{service.title}</h3>
                   <p className="relative mt-3 text-sm leading-relaxed text-muted-foreground">{service.summary}</p>
                   <div className="relative my-6 gold-hairline opacity-60" />
                   <ul className="relative space-y-2.5 text-sm text-foreground/85">

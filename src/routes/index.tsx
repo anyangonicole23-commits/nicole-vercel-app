@@ -3,7 +3,8 @@ import { Hero } from "@/components/site/Hero";
 import { AboutSection } from "@/components/site/AboutSection";
 import { ServicesSection } from "@/components/site/ServicesSection";
 import { AutomationSection } from "@/components/site/AutomationSection";
-import { PortfolioSection } from "@/components/site/PortfolioSection";
+import { DemoSection } from "@/components/site/DemoSection";
+import { ToolsSection } from "@/components/site/ToolsSection";
 import { WhySection } from "@/components/site/WhySection";
 import { CtaBand } from "@/components/site/CtaBand";
 
@@ -28,7 +29,8 @@ function Index() {
       <AboutSection />
       <ServicesSection />
       <AutomationSection />
-      <PortfolioSection limit={6} />
+      <DemoSection limit={4} />
+      <ToolsSection />
       <WhySection />
       <CtaBand />
     </>

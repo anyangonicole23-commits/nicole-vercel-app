@@ -50,7 +50,7 @@ export function SiteHeader() {
           <div className="flex items-center gap-2">
             <Button asChild variant="hero" size="lg" className="hidden sm:inline-flex">
               <Link to="/contact">
-                Book a Consultation <ArrowUpRight />
+                Hire Me <ArrowUpRight />
               </Link>
             </Button>
 
@@ -82,7 +82,7 @@ export function SiteHeader() {
                   <div className="mt-auto pt-10">
                     <SheetClose asChild>
                       <Button asChild variant="hero" size="xl" className="w-full">
-                        <Link to="/contact">Book a Consultation</Link>
+                        <Link to="/contact">Hire Me</Link>
                       </Button>
                     </SheetClose>
                   </div>

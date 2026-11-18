@@ -1,12 +1,17 @@
 import { z } from "zod";
 
 export const SERVICE_OPTIONS = [
-  "Executive Virtual Assistance",
-  "AI-Powered Executive Support",
-  "Workflow Automation",
-  "Graphic Design",
-  "Social Media Management",
-  "Website Design",
+  "Executive Calendar & Schedule Management",
+  "Inbox Management & Email Correspondence",
+  "Meeting Coordination & Preparation",
+  "Travel Research & Itinerary Planning",
+  "Administrative & Document Management",
+  "Online Research & Business Reporting",
+  "Project & Task Management",
+  "SOP Creation & Documentation",
+  "CRM & Client Relationship Management",
+  "AI Tools & Workflow Automation",
+  "Ongoing Executive Virtual Assistance",
   "Not sure yet — let's talk",
 ] as const;
 

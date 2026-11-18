@@ -1,19 +1,20 @@
 import { cn } from "@/lib/utils";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check } from "lucide-react";
-import workspaceImg from "@/assets/about-workspace.jpg";
+import portrait from "@/assets/nicole-portrait.jpg.asset.json";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./Reveal";
 
 const HIGHLIGHTS = [
-  "Executive administrative support",
-  "AI-assisted productivity",
-  "Workflow optimization",
-  "Digital creativity",
+  "Strong communication skills",
+  "Organization and time management",
+  "Confidentiality and professionalism",
+  "Problem-solving",
   "Attention to detail",
-  "Organization and reliability",
-  "Problem-solving mindset",
-];
+  "Prioritizing competing responsibilities",
+  "Quick to learn new systems and technologies",
+  "AI-assisted administrative productivity",
+]
 
 export function AboutSection({ headingAs = "h2", showLink = true , first = false }: { headingAs?: "h1" | "h2"; first?: boolean; showLink?: boolean }) {
   const Heading = headingAs;
@@ -23,14 +24,14 @@ export function AboutSection({ headingAs = "h2", showLink = true , first = false
         <Reveal className="relative">
           <div className="relative overflow-hidden rounded-[2rem] shadow-elegant">
             <img
-              src={workspaceImg}
-              alt="An organized executive workspace with planner, laptop calendar and orchids"
-              width={1024}
-              height={1280}
+              src={portrait.url}
+              alt="Portrait of Nicole, Executive Virtual Assistant"
+              width={896}
+              height={1195}
               loading="lazy"
-              className="aspect-[4/5] w-full object-cover"
+              className="aspect-[4/5] w-full object-cover object-top"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-plum/50 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-plum/30 via-transparent to-transparent" />
           </div>
           <div className="absolute -bottom-8 -right-4 max-w-[15rem] rounded-2xl glass p-5 shadow-elegant sm:-right-10">
             <p className="font-display text-2xl italic leading-tight text-primary">
@@ -53,18 +54,17 @@ export function AboutSection({ headingAs = "h2", showLink = true , first = false
 
           <Reveal delay={100} className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
             <p>
-              I'm Nicole — a proactive Executive Virtual Assistant and creative digital professional
-              who helps busy leaders reclaim their time and run their businesses with clarity.
+              I'm Nicole — a proactive, dependable and detail-oriented Executive Virtual Assistant
+              supporting CEOs, founders, consultants and business leaders who need a reliable right hand.
             </p>
             <p>
-              I combine administrative excellence with modern AI tools, thoughtful automation and a
-              designer's eye. The result is support that goes far beyond ticking boxes: calmer
-              calendars, faster processes, polished communication and a brand presence that looks
-              as good as the work behind it.
+              I keep calendars calm, inboxes under control and meetings well prepared, so you can focus
+              on decisions only you can make. I communicate clearly, handle sensitive information with
+              complete discretion, and stay one step ahead of competing priorities.
             </p>
             <p>
-              Whether you need a reliable right hand, smarter systems, or creative work that elevates
-              your business, I bring structure, initiative and care to every detail.
+              I use modern AI tools to work faster and smarter, and I'm always learning new systems so
+              your operations benefit from what works best.
             </p>
           </Reveal>
 

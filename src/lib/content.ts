@@ -1,12 +1,4 @@
-import {
-  Briefcase,
-  Sparkles,
-  Workflow,
-  Palette,
-  Megaphone,
-  MonitorSmartphone,
-  type LucideIcon,
-} from "lucide-react";
+import { CalendarDays, Mail, Users, Plane, FolderOpen, LineChart, KanbanSquare, ClipboardList, Contact, Sparkles, type LucideIcon } from "lucide-react";
 
 import brandImg from "@/assets/portfolio-brand.jpg";
 import socialImg from "@/assets/portfolio-social.jpg";
@@ -26,95 +18,16 @@ export type Service = {
 };
 
 export const SERVICES: Service[] = [
-  {
-    slug: "executive-virtual-assistance",
-    number: "01",
-    title: "Executive Virtual Assistance",
-    summary: "Discreet, proactive support that keeps your days structured and your priorities protected.",
-    icon: Briefcase,
-    items: [
-      "Executive calendar management",
-      "Inbox management and email prioritization",
-      "Meeting scheduling and coordination",
-      "Travel research and itinerary planning",
-      "Executive correspondence",
-      "Research and reporting",
-      "Administrative operations support",
-    ],
-  },
-  {
-    slug: "ai-executive-support",
-    number: "02",
-    title: "AI-Powered Executive Support",
-    summary: "Human judgement amplified by AI — faster research, sharper preparation, cleaner documents.",
-    icon: Sparkles,
-    items: [
-      "AI-assisted research and information organization",
-      "Meeting preparation and summarization",
-      "Document drafting and editing",
-      "AI-powered productivity workflows",
-      "Intelligent task management",
-      "Executive productivity optimization",
-    ],
-  },
-  {
-    slug: "workflow-automation",
-    number: "03",
-    title: "Workflow Automation",
-    summary: "Connected systems that quietly handle the repetitive work, so your team doesn't have to.",
-    icon: Workflow,
-    items: [
-      "Automating repetitive administrative tasks",
-      "Connecting business applications",
-      "Workflow design using Make.com and Zapier",
-      "Automated notifications and follow-ups",
-      "Process improvement",
-      "Reducing manual workload and administrative bottlenecks",
-    ],
-  },
-  {
-    slug: "graphic-design",
-    number: "04",
-    title: "Graphic Design",
-    summary: "Polished, on-brand visuals that make every touchpoint feel considered and premium.",
-    icon: Palette,
-    items: [
-      "Social media graphics",
-      "Marketing materials",
-      "Promotional posters",
-      "Brand visuals",
-      "Digital designs",
-    ],
-  },
-  {
-    slug: "social-media-management",
-    number: "05",
-    title: "Social Media Management",
-    summary: "Consistent, strategic content that builds presence and nurtures a loyal community.",
-    icon: Megaphone,
-    items: [
-      "Content planning",
-      "Content calendars",
-      "Social media graphics",
-      "Caption writing",
-      "Scheduling and publishing",
-      "Community engagement",
-    ],
-  },
-  {
-    slug: "website-design",
-    number: "06",
-    title: "Website Design",
-    summary: "Elegant, responsive websites that communicate credibility from the very first scroll.",
-    icon: MonitorSmartphone,
-    items: [
-      "Business websites",
-      "Portfolio websites",
-      "Landing pages",
-      "Responsive website design",
-      "Website content organization",
-    ],
-  },
+  { slug: "calendar", number: "01", title: "Executive Calendar & Schedule Management", summary: "Colour-coded calendars that protect focus time, prevent clashes and keep every commitment visible.", icon: CalendarDays, items: ["Daily and weekly schedule planning", "Conflict detection and rescheduling", "Time-zone aware booking", "Focus-time protection"] },
+  { slug: "inbox", number: "02", title: "Inbox Management & Email Correspondence", summary: "A calm, prioritized inbox — urgent items surfaced, routine replies drafted in your voice.", icon: Mail, items: ["Triage, labels and filters", "Priority flagging and follow-up tracking", "Professional reply drafting", "Inbox-zero routines"] },
+  { slug: "meetings", number: "03", title: "Meeting Coordination & Preparation", summary: "Meetings that start prepared and end with clear owners, deadlines and follow-ups.", icon: Users, items: ["Invitations and attendee coordination", "Agendas and briefing packs", "Minutes and action items", "Follow-up emails"] },
+  { slug: "travel", number: "04", title: "Travel Research & Itinerary Planning", summary: "Well-researched business trips with every flight, transfer and meeting in one itinerary.", icon: Plane, items: ["Flight and hotel research", "Transfers and logistics", "Day-by-day itineraries", "Budget tracking and reminders"] },
+  { slug: "admin", number: "05", title: "Administrative & Document Management", summary: "Organized files, clean templates and documents that are always easy to find.", icon: FolderOpen, items: ["Folder structures and naming", "Document formatting and templates", "Data entry and record keeping", "Confidential file handling"] },
+  { slug: "research", number: "06", title: "Online Research & Business Reporting", summary: "Clear, sourced research turned into executive summaries you can act on.", icon: LineChart, items: ["Market and competitor research", "Data gathering and comparison", "Executive summaries", "Slide and report preparation"] },
+  { slug: "projects", number: "07", title: "Project & Task Management", summary: "Every task with an owner, a deadline and a status — so nothing slips.", icon: KanbanSquare, items: ["Task boards and trackers", "Deadline monitoring", "Team follow-ups", "Weekly progress reports"] },
+  { slug: "sops", number: "08", title: "SOP Creation & Documentation", summary: "Step-by-step procedures that make recurring work consistent and easy to delegate.", icon: ClipboardList, items: ["Process mapping", "Written SOPs and checklists", "Onboarding guides", "Version-controlled documentation"] },
+  { slug: "crm", number: "09", title: "CRM & Client Relationship Management", summary: "Organized client records and timely touchpoints that keep relationships warm.", icon: Contact, items: ["Contact and pipeline updates", "Client follow-up reminders", "Enquiry tracking", "Relationship notes"] },
+  { slug: "ai", number: "10", title: "AI Tools & Workflow Automation", summary: "Practical AI and automations that cut manual admin and speed up preparation.", icon: Sparkles, items: ["AI-assisted drafting and summaries", "Request intake workflows", "Automated reminders", "Tool integrations"] },
 ];
 
 export const PORTFOLIO_CATEGORIES = [

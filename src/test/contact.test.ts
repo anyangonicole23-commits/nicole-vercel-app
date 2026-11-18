@@ -6,7 +6,7 @@ const valid = {
   name: "Ada",
   email: "ada@example.com",
   company: "",
-  service: "Workflow Automation",
+  service: "AI Tools & Workflow Automation",
   details: "I need help automating lead follow-ups.",
 };
 
@@ -25,7 +25,7 @@ describe("contact form rules", () => {
   });
   it("puts the chosen service in the email subject", () => {
     const parsed = contactSchema.parse(valid);
-    expect(buildMailtoUrl("a@b.com", parsed)).toContain(encodeURIComponent("Consultation request — Workflow Automation"));
+    expect(buildMailtoUrl("a@b.com", parsed)).toContain(encodeURIComponent("Consultation request — AI Tools & Workflow Automation"));
   });
 });
 
