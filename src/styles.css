@@ -230,6 +230,10 @@
   background-image: radial-gradient(color-mix(in oklab, var(--primary) 16%, transparent) 1px, transparent 1px);
   background-size: 22px 22px;
 }
+@utility bg-dots-gold {
+  background-image: radial-gradient(color-mix(in oklab, var(--gold) 42%, transparent) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
 @utility card-premium {
   position: relative;
   background: var(--card);
