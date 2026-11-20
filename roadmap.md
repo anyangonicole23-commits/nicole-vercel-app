@@ -2,7 +2,7 @@
 
 ## Now
 - [x] Real contact details in place (email, WhatsApp, LinkedIn, Instagram)
-- [x] About photo removed for good; that spot is now a designed brand panel
+- [x] About photo removed for good; all surrounding content retained and introduction shown first on phones
 
 ## Later
 - [ ] Replace sample portfolio projects with Nicole's real work

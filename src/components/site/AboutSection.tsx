@@ -20,12 +20,12 @@ export function AboutSection({ headingAs = "h2", showLink = true , first = false
   return (
     <section className={cn("relative py-24 sm:py-32", first && "pt-36 sm:pt-44")} aria-labelledby="about-heading">
       <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24">
-        <Reveal className="relative">
+        <Reveal className="relative order-2 mt-4 lg:order-1 lg:mt-0">
           <AboutVisual />
           <div aria-hidden className="absolute -left-6 -top-6 -z-10 size-40 rounded-full border border-gold/60" />
         </Reveal>
 
-        <div>
+        <div className="order-1 lg:order-2">
           <Reveal>
             <p className="eyebrow inline-flex items-center gap-3 text-gold-deep">
               <span aria-hidden className="h-px w-8 bg-gradient-gold" /> About me
