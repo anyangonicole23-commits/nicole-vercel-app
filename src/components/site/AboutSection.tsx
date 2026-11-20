@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Link } from "@tanstack/react-router";
 import { ArrowRight, Check } from "lucide-react";
-import portrait from "@/assets/nicole-portrait.jpg.asset.json";
+import portrait from "@/assets/nicole-outdoor.jpg.asset.json";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "./Reveal";
 
@@ -25,9 +25,9 @@ export function AboutSection({ headingAs = "h2", showLink = true , first = false
           <div className="relative overflow-hidden rounded-[2rem] shadow-elegant">
             <img
               src={portrait.url}
-              alt="Portrait of Nicole, Executive Virtual Assistant"
-              width={896}
-              height={1195}
+              alt="Nicole, Executive Virtual Assistant, standing outdoors in a colourful alphabet-print t-shirt"
+              width={1080}
+              height={1920}
               loading="lazy"
               className="aspect-[4/5] w-full object-cover object-top"
             />
