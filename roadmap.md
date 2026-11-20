@@ -2,6 +2,7 @@
 
 ## Now
 - [x] Real contact details in place (email, WhatsApp, LinkedIn, Instagram)
+- [x] Confirm the newly uploaded photo appears in About on the homepage and About page
 
 ## Later
 - [ ] Replace sample portfolio projects with Nicole's real work
